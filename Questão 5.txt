@@ -1,0 +1,3 @@
+Questão feita em python
+txt = "Desafio Target Sistema"[::- 1]
+print(txt) 

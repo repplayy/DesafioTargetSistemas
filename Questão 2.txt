@@ -1,0 +1,32 @@
+
+Console.WriteLine("digite o numero a ser verificado na sequencia de Fibonacci");
+ int num = int.Parse(Console.ReadLine());
+
+int verifica = 0;
+
+int a = 0, b = 1, aux;
+
+Console.WriteLine("************* ");
+for (int i = 0; i​​​​​​​ < num; i++)
+{
+	aux = a;
+	a = b;
+	b = a + aux;
+	Console.WriteLine("{0}", b);
+
+	if(num == b)
+    {
+		verifica++;
+    }
+}
+Console.WriteLine("*************\n ");
+
+if (verifica == 0)
+{
+	Console.WriteLine("o numero não pertence a sequencia ");
+
+}
+else
+{
+	Console.WriteLine("o numero  pertence a sequencia ");
+}
